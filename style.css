@@ -5,6 +5,8 @@
 
 html{
     scroll-behavior: smooth;
+}
+html, body{
     overflow-x: hidden;
 }
 
@@ -201,10 +203,7 @@ footer{
         transition: .4s ease-in-out;
         background-color: rgba(0,0,0,0.9);
     }
-    html{
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
+
     #logo{
         width: 100px;
         height: 100px;
