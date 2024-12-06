@@ -380,11 +380,11 @@
 
 
     <script>
-        document.getElementById("toggleButton").onclick = function () {
-            this.classList.toggle("clicked");
-
-
-        };
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("toggleButton").onclick = function () {
+                this.classList.toggle("clicked");
+            };
+        });
       
     </script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
