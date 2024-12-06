@@ -15,7 +15,7 @@
         <div class="logo">
             <img id="logo" src="damasklogo.jpg" width="100px" height="100px">
             <nav id="toggleButton">
-                <p id="adder"></p>
+                <a href="#">Menu</a>
                 <a href="#toast">Toasts</a>
                 <a href="#burgers">Burgers</a>
                 <a href="#sandwiches">Sandwiches</a>
@@ -30,14 +30,18 @@
         <form id="survey">
             <fieldset id="toast" data-aos="fade-up" data-aos-easing="ease-in-out">
                 <h1 class="title">Toasts</h1>
-                <label class="item" data-aos="fade-right" data-aos-easing="ease-in-out">
+                <label class="item" data-aos="fade-right"
+                 data-aos-easing="ease-in-out"
+                 data-aos-once="true">
                     <div class="shija">
                         <h3 class="mishi">Sallam</h3>
                         <p class="desc">(sallam,kaçkavall,keçap dhe majonez)</p>
                     </div>
                     <p class="cmimi">50den</p>
                 </label>
-                <label class="item" data-aos="fade-right" data-aos-easing="ease-in-out">
+                <label class="item" data-aos="fade-right"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="500">
                     <div class="shija">
                         <h3 class="mishi">Suxhuk</h3>
                         <p class="desc">(suxhuk,kaçkavall,keçap dhe majonez)</p>
@@ -104,7 +108,7 @@
                 <label class="item" data-aos="fade-right" data-aos-easing="ease-in-out">
                     <div class="shija">
                         <h3 class="mishi">Double Burger</h3>
-                        <p class="desc">(dy pleskavica,kaçkavall,perime,<br>majonez dhe sos)</p>
+                        <p class="desc">(dy pleskavica,kaçkavall,perime,majonez dhe sos)</p>
                     </div>
                     <p class="cmimi">190den</p>
                 </label>
@@ -381,37 +385,7 @@
 
 
         };
-        function addHTML() {
-            const container = document.getElementById('adder');
-            // Check if the HTML content already exists to avoid adding duplicates
-            if (!container.querySelector('.mm')) {
-                const newLine = document.createElement('div');
-                newLine.classList.add('mm');
-                newLine.textContent = 'Menu';
-                container.appendChild(newLine);
-            }
-        }
-        function removeHTML() {
-            const container = document.getElementById('adder');
-            const dynamicLine = container.querySelector('.mm');
-            if (dynamicLine) {
-                container.removeChild(dynamicLine);
-            }
-        }
-        function handleResize() {
-            // Check if the screen width is <= 762px (max-width)
-            if (window.matchMedia("(max-width: 768px)").matches) {
-                addHTML();
-            } else{
-                removeHTML();
-            }
-        }
-
-        // Run handleResize on page load to handle the initial screen size
-        handleResize();
-
-        // Set up an event listener to handle changes in screen size
-        window.addEventListener('resize', handleResize);
+      
     </script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
